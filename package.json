@@ -6,7 +6,7 @@
   "scripts": {
     "start_dev": "env-cmd -f ./.env.development ts-node src/main.ts",
     "start_prod": "env-cmd -f ./.env.production node build/main.js",
-    "build": "tsc --build --outDir ./build/"
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
