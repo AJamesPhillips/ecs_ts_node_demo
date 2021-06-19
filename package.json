@@ -1,0 +1,21 @@
+{
+  "name": "ecs_node_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start_dev": "env-cmd -f ./.env.development ts-node src/main.ts",
+    "start_prod": "env-cmd -f ./.env.production node build/main.js",
+    "build": "tsc --build --outDir ./build/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "20.1.4",
+    "@types/hapi__hapi": "^20.0.8",
+    "@types/node": "^15.12.4",
+    "env-cmd": "^10.1.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  }
+}
