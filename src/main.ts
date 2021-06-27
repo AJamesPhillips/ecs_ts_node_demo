@@ -8,7 +8,7 @@ const dev = true
 
 const server_options: Hapi.ServerOptions = {
     port: 5005,
-    host: "127.0.0.1",
+    host: "0.0.0.0",
     debug: { log: ["yes"] },
     routes: {
         cors: dev ? ({
